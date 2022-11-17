@@ -8,7 +8,7 @@ module.exports = {
       lg:'992px',
       xl:'1200px',
     },
-    container:{
+    containers:{
       center:'true',
       padding:'1rem',
     },
