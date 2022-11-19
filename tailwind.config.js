@@ -23,5 +23,11 @@ module.exports = {
 
     },
   },
+  vaiants:{
+   extend:{
+    display:['group-hover'],
+    visibility:['group-hover']
+   },
+  },
   plugins: [],
 }

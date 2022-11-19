@@ -62,14 +62,39 @@
         </div>
     </header>
     <!-- Header End -->
+    <!-- Navbar Start -->
     <nav class="bg-gray-800">
         <div class="container flex">
             <!-- all category -->
-            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer">
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                 <span class="text-white">
                     <i class="fas fa-bars"></i>
                 </span>
                 <span class="capitalize ml-2 text-white">All Category</span>
+
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible ">
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-light fa-couch text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Sofa</div>
+                    </a>
+
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-bed text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Bed</div>
+                    </a>
+
+
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-chair text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Office</div>
+                    </a>
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-mattress-pillow text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Mattress</div>
+                    </a>
+                </div>
             </div>
 
             <!-- Navbar Link -->
@@ -84,6 +109,23 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar End -->
+    <!-- Banner Start -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('/dist/images/banner.png');">
+        <div class="container">
+            <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
+                best collection for <br> home decoration
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the
+                industry's standard dummy</p>
+            <div class="mt-12">
+                <a href=""
+                    class="bg-primary border border-primary text-white py-3 px-8 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Shop
+                    Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
 </body>
 
 </html>
