@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body class="">
+    <!-- Header Start -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="">
+                <img src="/dist/images/logo.svg" alt="" class="w-32">
+            </a>
+
+            <!-- Search bar -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+                    placeholder="search">
+                <button
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+            </div>
+
+            <!-- Icon -->
+            <div class="flex items-center space-x-4">
+                <!-- Heart Icon -->
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span
+                        class="absolute text-white right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-xs ">3</span>
+                </a>
+                <!-- cart -->
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-xs text-gray-100 hover:bg-gray-900 hover:text-primary">5</span>
+                </a>
+                <!-- users -->
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3"> User</div>
+
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Navbar Start -->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- all category -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Category</span>
+
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible ">
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-light fa-couch text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Sofa</div>
+                    </a>
+
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-bed text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Bed</div>
+                    </a>
+
+
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-chair text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Office</div>
+                    </a>
+                    <a href="" class="flex items-center py-3 px-6 hover:bg-gray-200 transition">
+                        <i class="fas fa-regular fa-mattress-pillow text-red-400"></i>
+                        <div class="ml-6 text-gray-600 text-sm">Mattress</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navbar Link -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">About Us</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">Contact Us</a>
+                </div>
+                <a href="" class="text-gray-200 hover:text-white transition">Login/Register</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- bradecum -->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">My Account</p>
+    </div>
+    <!-- bradecum end -->
+
+    <!-- account warper -->
+    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+        <!-- sidebar -->
+        <div class="col-span-3 ">
+            <!-- account Profile -->
+            <div class="flex px-4 py-3 shadow items-center gap-4">
+                <div class="flex-shrink-0">
+                    <img src="/dist/images/account.png"
+                        class="rounded-full w-14 h-14 border border-gray-200 object-cover p-1" alt="">
+                </div>
+
+                <div class="flex-grow">
+                    <p class="text-gray-600">Hello!</p>
+                    <h4 class="text-gray-800 font-medium">Salman Rahman</h4>
+                </div>
+            </div>
+
+            <!-- account Profile end -->
+            <!-- profile link -->
+            <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
+                <div class="space-y-1 pl-8">
+                    <a href="" class="relative text-primary block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>
+                        Manage Account
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        Profile Information
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        Manage Address
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        Change Password
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 py-3">
+                    <a href=""
+                        class="relative text-gray-900 block hover:text-primary font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fas fa-gift"></i>
+                        </span>
+                        My order history
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        my returns
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        my cancelation
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        my review
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 py-3">
+                    <a href=""
+                        class="relative text-gray-900 block hover:text-primary font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fas fa-credit-card"></i>
+                        </span>
+                        Payment Method
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        voucher
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 py-3">
+                    <a href=""
+                        class="relative text-gray-900 block font-medium hover:text-primary capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        My Wishlist
+                    </a>
+                    <a href="" class="relative hover:text-primary block capitalize transition">
+                        voucher
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 py-3">
+                    <a href=""
+                        class="relative text-gray-900 block font-medium hover:text-primary capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fas fa-sign-out"></i>
+                        </span>
+                        Logout
+                    </a>
+                </div>
+            </div>
+            <!-- profile link end -->
+        </div>
+        <!-- sidebar end -->
+
+        <!-- profile info -->
+        <div class="col-span-9 grid grid-cols-3 gap-4  ">
+            <!-- single card -->
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Prsonal Profile</h3>
+                    <a href="" class="text-primary">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-800 font-medium capitalize">salman Rahman</h4>
+                    <p class="text-gray-800">example@gmail.com</p>
+                    <p class="text-gray-800">(123) 456-789</p>
+                </div>
+            </div>
+            <!-- single card end -->
+
+            <!-- shopping info -->
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Shipping Address</h3>
+                    <a href="" class="text-primary">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-800 font-medium capitalize">Ralph Bohner</h4>
+                    <p class="text-gray-800">3891 Ranchview Dr.Richardson, Califora</p>
+                    <p class="text-gray-800">(123) 456-789</p>
+                </div>
+            </div>
+            <!-- shopping info end -->
+
+            <!-- billing info -->
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Billing Address</h3>
+                    <a href="" class="text-primary">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-800 font-medium capitalize">Ralph Bohner</h4>
+                    <p class="text-gray-800">3891 Ranchview Dr.Richardson, Califora</p>
+                    <p class="text-gray-800">(123) 456-789</p>
+                </div>
+            </div>
+            <!-- billing info end -->
+        </div>
+        <!-- profile info end -->
+    </div>
+    <!-- account warper end -->
+
+    <!-- footer section -->
+    <div class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3 ">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/dist/images/logo.svg" alt="" class="w-32">
+                <p class="text-gray-500 px-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nam odit dolores cumque provident
+                    iste sequi doloribus,
+                </p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- footer text end -->
+
+            <!-- footer link  -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Analysys</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Imslight</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Prising</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Documentation</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Gides</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Api status</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Company</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">About</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Blog</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Job</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">place</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">legal</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Claim</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Policy</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Privancy</a>
+                            <a href="" class="text-base text-gray-400 hover:text-gray-900 block">Teams</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer text end -->
+
+        </div>
+    </div>
+    <!-- footer section end -->
+
+    <!-- copy right -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white ">@SALMAN - All Right Reserved </p>
+            <div>
+                <img src="/dist/images/payment-method.png" class="h-5" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- copy right end -->
+</body>
+
+</html>
